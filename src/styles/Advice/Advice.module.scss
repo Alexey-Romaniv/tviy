@@ -1,0 +1,35 @@
+.advice {
+  padding: 36px 0 24px;
+  background: rgba(171, 169, 186, 1);
+}
+
+.advice__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 2.2;
+  color: rgba(39, 19, 51, 1);
+}
+
+.advice__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 200px;
+    height: 2px;
+
+    background-color: var(--main-col);
+
+    border-radius: 5px;
+  }
+}

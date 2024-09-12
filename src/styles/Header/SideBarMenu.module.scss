@@ -1,0 +1,51 @@
+.burger {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu__wrapper {
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-text);
+  top: 0;
+  left: 0;
+}
+
+.nav__list {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3;
+  color: rgba(39, 19, 51, 1);
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+    &:hover,
+    &:focus {
+      background-color: rgba(218, 218, 218, 1);
+    }
+  }
+}
+
+.close {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.side__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px 8px 20px;
+}

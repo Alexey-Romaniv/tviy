@@ -1,0 +1,20 @@
+.header__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: var(--white-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px 8px 20px;
+
+  z-index: 10;
+}
