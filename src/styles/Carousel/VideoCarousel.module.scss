@@ -1,0 +1,63 @@
+.videoCarousel {
+  padding: 63px 0 50px;
+}
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //   border-radius: 35px;
+  color: var(--white-text);
+  //   padding: 40px 0 50px;
+  margin-top: 50px;
+  overflow: hidden; /* Ограничим область для фона */
+}
+
+.embla {
+  margin-top: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  //   max-width: 900px;
+  margin-left: auto;
+}
+
+.emblaContainer {
+  display: flex;
+  align-items: center;
+}
+.emblaSlide {
+  position: relative;
+  flex: 0 0 100%;
+  //   margin-right: px;
+  //   margin-left: 15px;
+  opacity: 1;
+  overflow: visible;
+  //   border-radius: 30px;
+}
+
+.video__img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.video__title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 60%;
+  bottom: 10%;
+  left: 5%;
+  color: var(--white-text);
+}
+
+@media screen and (min-width: 768px) {
+  .video__title {
+    font-size: 36px;
+    width: 55%;
+  }
+}

@@ -113,6 +113,41 @@ main {
   overflow: hidden;
 }
 
+.notFound__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url('/lineBg.svg') center/ cover;
+}
+
+.notFound__title {
+  font-size: 32px;
+  color: var(--main-col);
+  font-weight: 700;
+  text-align: center;
+  text-wrap: pretty;
+
+
+}
+
+.notFound__img {
+  height: 90%;
+  margin-inline: -30px;
+}
+
+.notFound__text {
+  display: flex;
+  font-size: 150px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--main-col);
+
+}
 
 .container {
   max-width: 430px;
@@ -120,4 +155,32 @@ main {
   width: 100%;
   margin: 0 auto;
 
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: none;
+    padding-inline: 60px;
+  }
+}
+
+@media screen and (min-width:1240px) {
+  .notFound__title {
+    font-size: 73px;
+  }
+
+  .notFound__text {
+    font-size: 300px;
+  }
+
+  .notFound__img {
+    height: auto;
+    width: 300px;
+  }
+
+  .container {
+    max-width: calc(1680px);
+    padding-inline: 120px;
+
+  }
 }

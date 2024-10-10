@@ -18,7 +18,7 @@ const SideBarMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <div className={styles.sideBar}>
       <button onClick={handleClick} type="button" className={styles.burger}>
         <Image src={Burger} alt="menu" width={25} height={25} />
       </button>

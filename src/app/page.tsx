@@ -4,8 +4,10 @@ import Header from "@/components/Header/Header";
 import HeroGif from "@/../public/hero.gif";
 import Hero from "@/components/Hero/Hero";
 import Advice from "@/components/Advice/Advice";
-import Carousel from "@/components/Carousel";
+import VideoCarousel from "@/components/VideoCarousel/VideoCarousel";
 import ClientsSay from "@/components/Reviews/ClientsSay";
+import Instagram from "@/components/Instagram/Instagram";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,15 +17,17 @@ export default function Home() {
         <Image
           src={HeroGif}
           alt="hero"
-          width={400}
-          height={100}
+          width={2000}
+          height={700}
           className={styles.hero}
         />
         <Hero />
-        <Carousel />
+        <VideoCarousel />
         <ClientsSay />
         <Advice />
+        <Instagram />
       </main>
+      <Footer />
     </div>
   );
 }

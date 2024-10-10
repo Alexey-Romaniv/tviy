@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "embla-carousel-fade": "^8.3.0",
     "embla-carousel-react": "^8.2.1",
     "next": "14.2.8",
     "react": "^18",

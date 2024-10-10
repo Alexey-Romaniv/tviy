@@ -33,3 +33,35 @@
     border-radius: 5px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .advice {
+    padding: 70px 0 80px;
+  }
+  .advice__title {
+    font-size: 36px;
+  }
+  .advice__subtitle {
+    font-size: 26px;
+
+    &::before {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .advice {
+    padding: 70px 0 80px;
+  }
+  .advice__title {
+    font-size: 60px;
+  }
+  .advice__subtitle {
+    font-size: 35px;
+    margin-bottom: 50px;
+    &::before {
+      width: 400px;
+    }
+  }
+}

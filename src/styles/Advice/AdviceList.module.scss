@@ -92,3 +92,65 @@
     color: rgba(171, 169, 186, 1);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .service__list {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+  .service__item {
+    width: auto;
+    padding: 25px;
+  }
+
+  .service__link {
+    max-width: 300px;
+    padding: 20px;
+    font-size: 19px;
+    border-width: 4px;
+    border-radius: 40px;
+  }
+  .service__title {
+    font-size: 22px;
+  }
+  .service__price {
+    font-size: 29px;
+  }
+  .details {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .service__list {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .service__item {
+    width: auto;
+    padding: 25px;
+  }
+
+  .service__link {
+    max-width: 300px;
+    padding: 20px;
+    font-size: 19px;
+    border-width: 4px;
+    border-radius: 40px;
+  }
+  .service__title {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .service__price {
+    font-size: 36px;
+  }
+  .details {
+    font-size: 20px;
+    margin-bottom: 60px;
+    gap: 15px;
+  }
+}

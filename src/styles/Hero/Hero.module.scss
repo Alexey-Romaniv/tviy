@@ -1,3 +1,6 @@
+.hero {
+}
+
 .portrait__wrapper {
   width: 100%;
   background: linear-gradient(
@@ -61,5 +64,117 @@
     height: 2px;
     background-color: var(--main-col);
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(
+      270.92deg,
+      #b0b0b0 35.9%,
+      rgba(157, 146, 146, 0) 85.11%
+    );
+  }
+
+  .portrait__wrapper {
+    flex: 3;
+    background: none;
+    // background: linear-gradient(
+    //   45.92deg,
+    //   #b5b4b3 35.9%,
+    //   rgba(157, 146, 146, 0) 85.11%
+    // );
+    display: flex;
+  }
+  .who__wrapper {
+    flex: 4;
+    background: none;
+  }
+
+  .portrait {
+    margin-top: auto;
+    margin-left: 0;
+    align-self: flex-end;
+    // height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    min-height: 80%;
+    max-width: 100%;
+  }
+
+  .hero__subtitle {
+    font-size: 24px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__text {
+    font-size: 16px;
+  }
+  .hero__invite {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(
+      270.92deg,
+      #b0b0b0 35.9%,
+      rgba(157, 146, 146, 0) 85.11%
+    );
+  }
+
+  .portrait__wrapper {
+    flex: 1;
+    background: none;
+    // background: linear-gradient(
+    //   45.92deg,
+    //   #b5b4b3 35.9%,
+    //   rgba(157, 146, 146, 0) 85.11%
+    // );
+    display: flex;
+  }
+  .who__wrapper {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    flex: 1.25;
+    background: none;
+    margin-left: 5vw;
+  }
+
+  .portrait {
+    margin-top: auto;
+    margin-left: 0;
+    align-self: flex-end;
+    // height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    // min-height: 80%;
+    max-width: 100%;
+  }
+
+  .hero__subtitle {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  .hero__text {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .hero__invite {
+    font-size: 21px;
   }
 }

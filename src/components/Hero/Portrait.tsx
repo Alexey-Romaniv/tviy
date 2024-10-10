@@ -8,8 +8,8 @@ const Portrait = () => {
       <Image
         src={PortraitImg}
         className={styles.portrait}
-        width={300}
-        height={200}
+        width={2333}
+        height={2788}
         alt="portrait"
       />
     </div>

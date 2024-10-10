@@ -93,3 +93,45 @@
   z-index: 10;
   padding: 7px;
 }
+
+@media screen and (min-width: 768px) {
+  .certificate__button {
+    max-width: 350px;
+    min-height: 80px;
+    font-size: 22px;
+
+    scale: 0.8;
+    transform-origin: left;
+  }
+
+  .certificate__viewport {
+    width: 100%;
+  }
+
+  .certificate__close {
+    right: -25px;
+  }
+
+  .prevButton {
+    left: 2%;
+  }
+  .nextButton {
+    right: 2%;
+  }
+
+  .arrow__left {
+    width: 60px;
+    height: 60px;
+  }
+  .arrow__right {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .certificate__button {
+    scale: 1;
+    margin-top: 50px;
+  }
+}

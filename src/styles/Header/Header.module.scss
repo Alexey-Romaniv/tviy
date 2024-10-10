@@ -18,3 +18,66 @@
 
   z-index: 10;
 }
+
+.nav,
+.nav__list,
+.nav__link,
+.header__social {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav,
+  .nav__list,
+  .nav__link,
+  .header__social {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+  }
+
+  .nav__link {
+    color: rgba(39, 19, 51, 1);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .header__social {
+    display: flex;
+    gap: 10px;
+
+    & img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .header {
+    justify-content: start;
+    padding: 10px 90px;
+  }
+  .header__social {
+    margin-left: auto;
+  }
+  .nav {
+    margin-left: 90px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__social {
+    gap: 20px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
