@@ -5,26 +5,30 @@ import Link from "next/link";
 import ArrowNext from "@/../public/carousel-next.svg";
 import Image from "next/image";
 const ClientsSay = () => {
-  let options = {
+  const options: IntersectionObserverInit = {
     threshold: [0.5],
   };
-  useEffect(() => {
-    const observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll("#image-animation");
-    elements.forEach((elm) => {
-      observer.observe(elm);
-    });
-  }, []);
-  function onEntry(entry: any) {
-    entry.forEach((change: any) => {
-      if (change.isIntersecting) {
-        console.log("addd");
-        console.log(styles.show);
 
-        change.target.classList.add(styles.show);
+  // Типизация параметров функции `onEntry`
+  const onEntry = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(styles.show);
       }
     });
-  }
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(onEntry, options);
+    const elements = document.querySelectorAll<HTMLElement>("#image-animation");
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Очищаем наблюдатель при размонтировании
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className={styles.testimonialSection}>

@@ -12,9 +12,9 @@ const Header = () => {
   const [scrollPos, setScrollPos] = useState(0);
 
   // Throttle-функция
-  const throttle = (func: (...args: any[]) => void, delay: number) => {
+  const throttle = (func: (...args: unknown[]) => void, delay: number) => {
     let lastCall = 0;
-    return (...args: any[]) => {
+    return (...args: unknown[]) => {
       const now = new Date().getTime();
       if (now - lastCall < delay) return;
       lastCall = now;
