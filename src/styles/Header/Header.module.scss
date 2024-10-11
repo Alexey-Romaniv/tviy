@@ -17,6 +17,18 @@
   padding: 20px 28px 8px 20px;
 
   z-index: 10;
+
+  transition: transform 0.5s ease; /* Плавный переход */
+}
+
+/* Класс для скрытого состояния */
+.slide_up {
+  transform: translateY(-100%); /* Скрывает хедер, поднимая его вверх */
+}
+
+/* Класс для видимого состояния */
+.slide_down {
+  transform: translateY(0); /* Показывает хедер, возвращая его на место */
 }
 
 .nav,

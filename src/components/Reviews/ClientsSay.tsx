@@ -1,9 +1,31 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import styles from "@/styles/Reviews/ClientsSay.module.scss";
 import Link from "next/link";
 import ArrowNext from "@/../public/carousel-next.svg";
 import Image from "next/image";
 const ClientsSay = () => {
+  let options = {
+    threshold: [0.5],
+  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll("#image-animation");
+    elements.forEach((elm) => {
+      observer.observe(elm);
+    });
+  }, []);
+  function onEntry(entry: any) {
+    entry.forEach((change: any) => {
+      if (change.isIntersecting) {
+        console.log("addd");
+        console.log(styles.show);
+
+        change.target.classList.add(styles.show);
+      }
+    });
+  }
+
   return (
     <div className={styles.testimonialSection}>
       <div className="container">
@@ -39,10 +61,16 @@ const ClientsSay = () => {
             </span>
           </div>
         </div>
-        <div className={`${styles.image} ${styles.imageLeft}`}>
+        <div
+          id="image-animation"
+          className={`${styles.image} ${styles.imageLeft}`}
+        >
           <img src="/reviews/clientSay-1.png" alt="image right" />
         </div>
-        <div className={`${styles.image} ${styles.imageRight}`}>
+        <div
+          id="image-animation"
+          className={`${styles.image} ${styles.imageRight}`}
+        >
           <img src="/reviews/clientSay-2.png" alt="image right" />
         </div>
       </div>
